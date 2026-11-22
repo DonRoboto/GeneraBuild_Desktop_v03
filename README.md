@@ -103,7 +103,6 @@ The CLI still uses internal mode identifiers `ampliacion` / `completo` for backw
 - `runs/<id>/`: immutable per-scenario artifacts and evaluation reports.
 - `diagnostics/camera_sync/`: audits for accepted joint calibrations.
 
-**Research claims and limitations:** FR2 retains original pixels outside authorized masks, but that only guarantees preservation if masks are drawn correctly. The model is a local prism, not a full 3D city reconstruction. Fitted-camera RMSE is not held-out validation; evaluate consistency with independent points and architecture lines.
 
 See [`METHOD.md`](METHOD.md), [`docs/CAMERA_SYNC.md`](docs/CAMERA_SYNC.md), and [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
 
