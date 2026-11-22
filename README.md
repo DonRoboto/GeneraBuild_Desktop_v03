@@ -1,12 +1,18 @@
-# GeneraBuild Studio Desktop v0.3.2
+# GeneraBuild Studio
 
-**Geometry-Constrained Urban Scenario Visualization — Research Software Prototype**
+**Editor de escenarios urbanos con geometría 3D y generación condicionada mediante Stable Diffusion + ControlNet.**
 
-A native **PySide6 / Qt desktop application** for calibrating four photographs of an urban site, editing a shared 3D building volume, preparing 8–10-floor densification scenarios, and generating geometry-conditioned photographic visualizations. This release uses a **photo-first, two-pane layout**: a large calibrated-photo workspace alongside a resizable controls panel. It retains the English interface and reversible four-camera synchronization.
+Este repositorio contiene una demostración sobre **Guanajuato 8, colonia Roma Norte, Ciudad de México**. El proyecto permite visualizar una ampliación hipotética de un edificio existente de **3 a 8, 9 o 10 pisos en total**, conservando su huella y utilizando cuatro fotografías de referencia.
 
-**Status:** CPU geometry/calibration operations and regression tests were exercised with synthetic photographs. A visual Qt session and CUDA inference must still be validated on the target Ubuntu workstation. Camera poses and physical dimensions are approximations, not a geodetic or architectural survey.
+![GeneraBuild Studio con las cuatro vistas del proyecto](docs/images/03_cuatro_vistas.png)
 
-## Installation on Ubuntu
+## 1. Instalación y ejecución
+
+**Requisito:** Python 3 y un entorno capaz de instalar las dependencias declaradas en `requirements.txt`. Los comandos siguientes están escritos para **Ubuntu/Linux**.
+
+### Opción A. Instalación desde el paquete ZIP
+
+Si recibió el archivo `GeneraBuild_Desktop_v03_2_PhotoFirst_Complete.zip`, abra una terminal en la carpeta donde lo descargó y ejecute:
 
 ```bash
 unzip GeneraBuild_Desktop_v03_2_PhotoFirst_Complete.zip
@@ -18,94 +24,81 @@ python -m pip install -r requirements.txt
 python -m generabuild_desktop
 ```
 
-Recommended: Python 3.11 or 3.12. If Qt fails to open on Linux, inspect the platform plugin and `xcb` system dependencies. CPU mode does not require CUDA.
+> El nombre del directorio descomprimido debe coincidir con el contenido del ZIP. Si es distinto, ajuste el comando `cd`.
 
-When upgrading an existing v0.2.2 installation, prefer the **patch ZIP** instead of replacing the entire directory. The patch does not include `workspace/` and therefore does not overwrite existing projects or runs.
+### Opción B. Instalación desde GitHub
 
-## Main workflow
-
-### 1. Create a project or open a calibrated site
-
-- Select **File → New project (4 photographs)** to create a site from scratch. Photos 1–2 are aerial, photos 3–4 are street-level perspectives; the original bytes are copied unchanged to `workspace/sites/<id>/inputs/`.
-- Alternatively, use **Open project folder** or **Import Colab ZIP** for an existing FR2 calibration.
-- Saving a draft does not create fake camera poses; the application requires successful PnP calibration before a scenario can be generated.
-
-### 2. Calibration
-
-1. In **Calibration**, choose one of the four views. Mark only genuinely identifiable physical vertices, using consistent IDs `0..7` across the project.
-2. Enter approximate original width `W`, depth `D`, and height `H₀`. Set the **horizontal FOV separately for every camera**. The app preserves whatever FOV you calibrated: 110° was effective for one particular Guanajuato 8 street image, but is not assumed for other photographs.
-3. Select **Calibrate selected view** or **Calibrate all four cameras**. Initial poses are estimated using OpenCV PnP.
-4. Inspect both the original reference prism and the proposed building prism. Add **permitted-edit** and **protected-context polygons**; optionally record **observed structural edges** and vanishing-point guides.
-5. Confirm the visual review and click **Save calibration and enable generation**. This creates `calibration_multiview.json`, masks, Canny images, and previews.
-
-Do **not** invent rear vertices that cannot be seen. Fitting RMSE alone does not establish geometric accuracy. A common local coordinate system is used across all four photographs.
-
-### 3. Camera Performance — four-camera synchronization (new)
-
-Open **Camera Performance** after saving the four-camera PnP calibration. You will see a table containing each view's number of anchors, horizontal FOV, and current reprojection RMSE.
-
-1. Click **Synchronize cameras · Propose refinement**. An optimization runs in a worker thread without overwriting the saved calibration.
-2. The solver adjusts **four camera poses and the common original building width and depth** using restricted bundle adjustment. It **holds original height and all four FOVs fixed**. If you recorded *real* structural edges, you can use them as additional angular constraints. Automatically drawn VP guide lines are never treated as independent observations.
-3. Inspect the new pooled RMSE, each camera's before/after RMSE, width/depth changes, and warnings.
-4. Toggle **Preview synchronized geometry in all four photographs**. View the original and proposed cameras with the global 2×2 / single-view selector. Zoom and check actual building boundaries and protected neighbors.
-5. Click **Discard proposal** to keep the original calibration, or check **I reviewed all four reprojections and the protected regions**, then click **Accept and save synchronization**. A confirmation dialog is required.
-
-**Acceptance** keeps `calibration_backup_*.json`, saves an audit report in `diagnostics/camera_sync/`, rebuilds geometric masks and previews, and leaves original photographs and historical run directories intact. If 2.5D neighbor volumes exist, review their placements after changes to the building footprint.
-
-**Important limitation:** joint refinement requires observable depth evidence (genuine front and rear corners in at least one aerial image). With only front-face planar points, optimization is rejected rather than fabricating depth. A lower fitting RMSE is not independent geometric validation. See [`docs/CAMERA_SYNC.md`](docs/CAMERA_SYNC.md).
-
-### 4. Scenario generation
-
-In **Scenario**, select 8, 9, or 10 floors, one of the existing generation modes, and the photos to render.
-
-- **Prepare scenario · CPU** generates masks, Canny conditioning, and previews without diffusion. This is useful for validation on any laptop.
-- **Generate · Stable Diffusion + ControlNet (GPU)** uses the FR2 inpainting pipeline and optionally runs façade and roof finishing. CUDA and compatible pretrained model weights are required; GPU inference was not tested in this build environment.
-- Geometry and camera calibration are not re-estimated when changing floor count.
-
-For optional CUDA support, install the correct PyTorch/CUDA build for your system, then use `requirements-gpu.txt`. Model downloads and their licensing terms are managed independently of this source code.
-
-### 5. Optional 2.5D neighborhood context
-
-In **2.5D Neighbors**, define approximate ground footprints and heights. Neighbors are projected onto all four photographs; no separate 3D viewer is required. Their JSON is separate from camera calibration. **Use neighbors as generation occluders** is experimental and off by default; it can introduce errors if footprints/heights are inaccurate.
-
-### 6. Result Viewer
-
-Open **Results** to select a saved run and switch between **Original**, **Generated**, **Compare**, **Base (before enhancements)**, and **Geometry preview (CPU)**.
-
-Use the top **View layout** switch for a **2×2 grid** or a **single enlarged photo**. The comparison slider controls a vertical reveal of original/generated pixels. Export a 2×2 montage or the run artifacts. Missing generated views are explicitly labeled rather than fabricated.
-
-## Photo-first workspace (v0.3.2)
-
-The separate axonometric 3D canvas was removed **from the interface only**. The four-photo canvas now occupies the left workspace, with Calibration, Scenario, 2.5D Neighbors, Camera Performance, and Results in a resizable panel on the right. Drag the vertical splitter to give more space to photos or controls. The **Four views (2×2)** / **One enlarged view** selector, point annotation, zoom, pan, projected building outlines, manual vanishing lines, synchronization preview, and before/after Result Viewer all remain available. Original project data and 3D mathematics are unchanged.
-
-## Keyboard shortcuts
-
-| Key | Action |
-|---|---|
-| `Ctrl+G` | Four-view grid (2×2) |
-| `Ctrl+L` | One enlarged photograph |
-| `Ctrl+1` to `Ctrl+4` | Select a photo |
-| Mouse wheel | Zoom in/out |
-| Drag outside annotation mode | Pan photographs |
-
-## Reproducibility and tests
+Si ya clonó o descargó **este repositorio**, abra una terminal **en su carpeta raíz** (donde se encuentra `requirements.txt`). No necesita ejecutar `unzip`:
 
 ```bash
-python -m pytest -q
-python -m generabuild.cli --site workspace/sites/synthetic_demo --floors 9 --mode ampliacion --preview-only
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m generabuild_desktop
 ```
 
-The CLI still uses internal mode identifiers `ampliacion` / `completo` for backward compatibility with calibration, run manifests and notebooks. These **machine-readable identifiers are intentionally unchanged**; interface labels are English.
+### Dependencias para generar imágenes con GPU
 
-- `calibration_multiview.json`: saved view poses, matrices, correspondences, polygons, and camera FOVs.
-- `project_draft.json`: incomplete annotations before camera calibration.
-- `urban_context_2p5d.json`: optional approximate neighbor volumes.
-- `runs/<id>/`: immutable per-scenario artifacts and evaluation reports.
-- `diagnostics/camera_sync/`: audits for accepted joint calibrations.
+Los comandos anteriores instalan la aplicación. **Para ejecutar la síntesis de nuevas imágenes** también se requiere PyTorch con soporte CUDA (si usa una GPU NVIDIA) y las dependencias adicionales del proyecto:
 
+```bash
+# Instale primero PyTorch con CUDA compatible con su equipo.
+python -m pip install -r requirements-gpu.txt
 
-See [`METHOD.md`](METHOD.md), [`docs/CAMERA_SYNC.md`](docs/CAMERA_SYNC.md), and [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
+# Verifique el reconocimiento de CUDA:
+python -c "import torch; print('CUDA disponible:', torch.cuda.is_available())"
+```
 
-## Floor-to-floor height for Guanajuato 8 (v0.3.1)
+Si CUDA no está disponible, puede revisar configuraciones y resultados previamente guardados, pero la generación mediante Stable Diffusion + ControlNet puede fallar. Consulte las instrucciones oficiales de instalación de PyTorch para su GPU: <https://pytorch.org/get-started/locally/>.
 
-Use **Scenario → Assumed height per floor = 3.00 m**. The default nine-floor scenario is **27.00 m**; eight floors = 24 m and ten floors = 30 m. A live label shows the exact scenario height. If a legacy project saved a different floor-height assumption (for example 5 m), the Scenario tab warns you, but your original camera calibration is not modified. Details: [`docs/FLOOR_HEIGHT.md`](docs/FLOOR_HEIGHT.md).
+## 2. Abrir el proyecto de Guanajuato 8
+
+Con GeneraBuild Studio abierto:
+
+1. Vaya a **File → Open project folder...** o pulse **Open site...**.
+2. Abra `workspace/sites/` y seleccione **`gto_v5`**; si el proyecto publicado se llama **`gta8_v5`**, seleccione esa carpeta.
+3. Confirme que aparecen **cuatro fotografías reales**, dos aéreas y dos a nivel de calle. **No seleccione `synthetic_demo`**, que es un ejemplo sintético.
+
+![Selección del proyecto en GeneraBuild Studio](docs/images/02_elegir_carpeta.png)
+
+## 3. Configurar el escenario y generar las imágenes
+
+1. Abra la pestaña **Scenario** del panel derecho.
+2. En **Target floors**, seleccione **8, 9 o 10** pisos. Este es el **número total de niveles**, no el número de niveles añadidos.
+3. Mantenga **Assumed height per floor = 3.00 m/floor** y **Mode = Vertical extension (3→N)**.
+4. Para reproducir el ejemplo documentado, utilice **Seed = 1234, Steps = 40, CFG = 5.50 y ControlNet = 0.65**, con las **vistas 1, 2, 3 y 4** seleccionadas.
+5. Pulse **Prepare scenario · CPU**.
+6. Pulse **GENERAR · Stable Diffusion + ControlNet (GPU)**.
+7. Cuando termine, abra la pestaña **Results** para seleccionar la ejecución y visualizar las imágenes finales.
+
+![Configuración de altura y botones de ejecución](docs/images/04_configuracion_generacion.png)
+
+| Escenario | Altura nominal total | Incremento nominal sobre 3 pisos |
+|---|---:|---:|
+| 8 pisos | 24 m | 15 m |
+| 9 pisos | 27 m | 18 m |
+| 10 pisos | 30 m | 21 m |
+
+*Estas alturas se basan en el supuesto de 3 m por nivel; no son mediciones arquitectónicas del inmueble.*
+
+**Para consultar el resultado existente**, abra el proyecto y vaya directamente a **Results**. La imagen principal de la entrega corresponde a la **Vista 2 con 8 pisos**, si está disponible en las ejecuciones incluidas.
+
+## 4. Documentación
+
+- [Manual ilustrado de GeneraBuild Studio](docs/MANUAL_GENERABUILD_STUDIO.md): apertura del proyecto, configuración, generación, resultados y solución de problemas.
+- [Manual ilustrado en PDF](docs/MANUAL_GENERABUILD_STUDIO.pdf).
+
+## 5. Solución rápida de problemas
+
+| Problema | Comprobación |
+|---|---|
+| Se abre `synthetic_demo` | Abra **File → Open project folder...** y seleccione el proyecto real en `workspace/sites/`. |
+| Aparece `NO RESULT · ORIGINAL` | En **Results**, seleccione una ejecución guardada o genere una nueva. |
+| Aparece «Faltan dependencias GPU» | Active el entorno virtual, instale `requirements-gpu.txt` y compruebe PyTorch/CUDA. |
+| No se ven las cuatro fotografías | Compruebe que el proyecto incluya las fotografías originales y su calibración. |
+| El resultado de una nueva corrida difiere del ejemplo | Compruebe la altura, la semilla, las versiones de los modelos y las dependencias. Una semilla fija no garantiza identidad entre diferentes sistemas. |
+
+## Alcance
+
+GeneraBuild produce **representaciones visuales hipotéticas** de densificación vertical sobre un modelo geométrico calibrado con las fotografías. No verifica la factibilidad normativa ni mide con precisión topográfica la altura real del inmueble. La generación requiere que los insumos del proyecto y los checkpoints de los modelos estén disponibles.
