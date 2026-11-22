@@ -1,6 +1,6 @@
 # GeneraBuild Studio — Inicio rápido
 
-**Para reproducir el escenario de Guanajuato 8**, abre GeneraBuild Studio y carga el proyecto del sitio. En las capturas el directorio se llama `workspace/sites/gto_v5`; si tu copia utiliza `gta8_v5`, selecciona ese nombre.
+**Para reproducir el escenario de Guanajuato 8**, abre GeneraBuild Studio y carga el proyecto del sitio. En las capturas el directorio se llama `workspace/sites/gto_v5`
 
 ```bash
 python3 -m venv .venv
