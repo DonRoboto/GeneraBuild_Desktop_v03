@@ -1,0 +1,832 @@
+{
+  "format": "GeneraBuild_v2",
+  "created_utc": "2026-11-21T20:40:25.149221+00:00",
+  "coordinate_system": "X fachada derecha, Y profundidad, Z altura; dimensiones aproximadas",
+  "camera_model": "P=K[R|t], FOV horizontal por vista, distorsión cero",
+  "reference_box_m": {
+    "W": 9.59,
+    "D": 21.67,
+    "H": 9.0
+  },
+  "target_box_m": {
+    "W": 9.59,
+    "D": 21.67,
+    "H": 24.0
+  },
+  "num_floors": 8,
+  "floor_height_m": 3.0,
+  "reference_vertices_3d_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      9.59,
+      0.0,
+      0.0
+    ],
+    [
+      9.59,
+      21.67,
+      0.0
+    ],
+    [
+      0.0,
+      21.67,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      9.0
+    ],
+    [
+      9.59,
+      0.0,
+      9.0
+    ],
+    [
+      9.59,
+      21.67,
+      9.0
+    ],
+    [
+      0.0,
+      21.67,
+      9.0
+    ]
+  ],
+  "vertices_3d_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      9.59,
+      0.0,
+      0.0
+    ],
+    [
+      9.59,
+      21.67,
+      0.0
+    ],
+    [
+      0.0,
+      21.67,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      24.0
+    ],
+    [
+      9.59,
+      0.0,
+      24.0
+    ],
+    [
+      9.59,
+      21.67,
+      24.0
+    ],
+    [
+      0.0,
+      21.67,
+      24.0
+    ]
+  ],
+  "views": [
+    {
+      "index": 1,
+      "name": "Vista_1.png",
+      "image_original_path": "/home/yor5/Documents/GitHub/prueba_urbana/prueba_parte_a/GeneraBuild_Desktop_v03/workspace/sites/gto_v5/inputs/Vista_1.png",
+      "image_relative": "inputs/Vista_1.png",
+      "image_sha256": "1fb1522fb43fea2919de13b866031f5e3430b5b6eb84201ba49a2ac6667aafd8",
+      "image_size_wh": [
+        1313,
+        647
+      ],
+      "mask_relative": "masks/mask_Vista_1.png",
+      "canny_relative": "canny/canny_Vista_1.png",
+      "preview_relative": "previews/preview_Vista_1.png",
+      "fov_horizontal_deg": 55.0,
+      "K": [
+        [
+          1261.1247663565705,
+          0.0,
+          656.5
+        ],
+        [
+          0.0,
+          1261.1247663565705,
+          323.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rvec": [
+        2.3515248743957273,
+        0.2528138537723056,
+        -0.2923160946084721
+      ],
+      "tvec": [
+        17.374294907841424,
+        0.6964329479503542,
+        110.92558812033192
+      ],
+      "P": [
+        [
+          1018.8334613193251,
+          765.1007831034149,
+          -630.8938865677326,
+          94733.80220725958
+        ],
+        [
+          30.253717309187316,
+          -678.5895108225337,
+          -1110.7154967445645,
+          36762.716595694284
+        ],
+        [
+          -0.28186896806662104,
+          0.656283898270365,
+          -0.6998866549035718,
+          110.92558812033192
+        ]
+      ],
+      "camera_center_m": [
+        14.613769133890564,
+        -76.9116049598294,
+        80.48527825908072
+      ],
+      "anchors_px": {
+        "0": {
+          "x": 855.035,
+          "y": 334.01
+        },
+        "1": {
+          "x": 964.889,
+          "y": 348.658
+        },
+        "6": {
+          "x": 987.6,
+          "y": 104.23
+        },
+        "7": {
+          "x": 892.241,
+          "y": 101.273
+        },
+        "5": {
+          "x": 966.12,
+          "y": 265.209
+        },
+        "4": {
+          "x": 856.247,
+          "y": 251.475
+        }
+      },
+      "reprojection_rmse_px": 5.119892695938079,
+      "reprojection_rmse_diagonal_pct": 0.3497780388334093,
+      "per_vertex_error_px": {
+        "0": 2.78,
+        "1": 6.327,
+        "4": 6.682,
+        "5": 3.502,
+        "6": 6.396,
+        "7": 3.421
+      },
+      "planar_anchors": false,
+      "warnings": [],
+      "allowed_polygon_px": null,
+      "protected_polygons_px": [
+        [
+          {
+            "x": 831.625,
+            "y": 289.953
+          },
+          {
+            "x": 845.644,
+            "y": 290.591
+          },
+          {
+            "x": 864.762,
+            "y": 304.61
+          },
+          {
+            "x": 879.419,
+            "y": 311.62
+          },
+          {
+            "x": 883.88,
+            "y": 326.277
+          },
+          {
+            "x": 878.782,
+            "y": 342.846
+          },
+          {
+            "x": 861.576,
+            "y": 360.689
+          },
+          {
+            "x": 847.556,
+            "y": 353.679
+          },
+          {
+            "x": 830.987,
+            "y": 325.64
+          },
+          {
+            "x": 829.076,
+            "y": 300.15
+          },
+          {
+            "x": 829.713,
+            "y": 291.865
+          }
+        ]
+      ],
+      "manual_vp_guides_px": [],
+      "observed_axis_segments_px": [],
+      "mask_stats": {
+        "silhouette_px": 45421,
+        "editable_px": 44601,
+        "fraction_of_image_editable": 0.052501968779686194,
+        "fraction_silhouette_excluded": 0.01805332335263421,
+        "silhouette_bbox_xywh": [
+          846,
+          -42,
+          158,
+          385
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Vista_2.png",
+      "image_original_path": "/home/yor5/Documents/GitHub/prueba_urbana/prueba_parte_a/GeneraBuild_Desktop_v03/workspace/sites/gto_v5/inputs/Vista_2.png",
+      "image_relative": "inputs/Vista_2.png",
+      "image_sha256": "05791b71a17b49225e124a2432fe9caf5f0534c4eaa2ae9c15613988e50c8dd2",
+      "image_size_wh": [
+        1504,
+        650
+      ],
+      "mask_relative": "masks/mask_Vista_2.png",
+      "canny_relative": "canny/canny_Vista_2.png",
+      "preview_relative": "previews/preview_Vista_2.png",
+      "fov_horizontal_deg": 55.0,
+      "K": [
+        [
+          1444.578559482317,
+          0.0,
+          752.0
+        ],
+        [
+          0.0,
+          1444.578559482317,
+          325.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rvec": [
+        1.9879892367801648,
+        0.20401294417599009,
+        -0.20895127476060538
+      ],
+      "tvec": [
+        17.17137266529393,
+        -0.1512868298356241,
+        136.79606252691454
+      ],
+      "P": [
+        [
+          1221.757034870663,
+          1005.0442185778957,
+          -386.66145523338724,
+          127676.03580940407
+        ],
+        [
+          -6.788490664397674,
+          -305.9277578627239,
+          -1448.7216219410795,
+          44240.17461053463
+        ],
+        [
+          -0.23849889214018133,
+          0.8807228387427884,
+          -0.409201123855679,
+          136.79606252691454
+        ]
+      ],
+      "camera_center_m": [
+        15.978465525691625,
+        -124.61551122725983,
+        56.777677398743315
+      ],
+      "anchors_px": {
+        "0": {
+          "x": 932.892,
+          "y": 315.667
+        },
+        "1": {
+          "x": 1037.711,
+          "y": 320.505
+        },
+        "6": {
+          "x": 1057.869,
+          "y": 164.083
+        },
+        "7": {
+          "x": 953.453,
+          "y": 162.067
+        },
+        "5": {
+          "x": 1041.59,
+          "y": 247.799
+        },
+        "4": {
+          "x": 918.008,
+          "y": 236.166
+        }
+      },
+      "reprojection_rmse_px": 9.350038258065824,
+      "reprojection_rmse_diagonal_pct": 0.5706638861094346,
+      "per_vertex_error_px": {
+        "0": 7.748,
+        "1": 8.036,
+        "4": 15.106,
+        "5": 10.167,
+        "6": 5.997,
+        "7": 5.692
+      },
+      "planar_anchors": false,
+      "warnings": [
+        "RMSE >0.5% of diagonal: review vertices and FOV"
+      ],
+      "allowed_polygon_px": null,
+      "protected_polygons_px": [
+        [
+          {
+            "x": 918.782,
+            "y": 269.708
+          },
+          {
+            "x": 946.599,
+            "y": 300.348
+          },
+          {
+            "x": 957.484,
+            "y": 303.573
+          },
+          {
+            "x": 956.678,
+            "y": 313.652
+          },
+          {
+            "x": 961.516,
+            "y": 327.359
+          },
+          {
+            "x": 947.002,
+            "y": 339.453
+          },
+          {
+            "x": 935.714,
+            "y": 347.92
+          },
+          {
+            "x": 904.671,
+            "y": 331.793
+          },
+          {
+            "x": 917.572,
+            "y": 268.096
+          }
+        ]
+      ],
+      "manual_vp_guides_px": [],
+      "observed_axis_segments_px": [],
+      "mask_stats": {
+        "silhouette_px": 35647,
+        "editable_px": 34921,
+        "fraction_of_image_editable": 0.03572115384615385,
+        "fraction_silhouette_excluded": 0.020366370241535092,
+        "silhouette_bbox_xywh": [
+          932,
+          19,
+          125,
+          310
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Vista_3.png",
+      "image_original_path": "/home/yor5/Documents/GitHub/prueba_urbana/prueba_parte_a/GeneraBuild_Desktop_v03/workspace/sites/gto_v5/inputs/Vista_3.png",
+      "image_relative": "inputs/Vista_3.png",
+      "image_sha256": "ef87250efdd5b7eaa28d6c95e437dfb7c2d7c906c1f319dbc47d2c04ed00db32",
+      "image_size_wh": [
+        1915,
+        795
+      ],
+      "mask_relative": "masks/mask_Vista_3.png",
+      "canny_relative": "canny/canny_Vista_3.png",
+      "preview_relative": "previews/preview_Vista_3.png",
+      "fov_horizontal_deg": 110.0,
+      "K": [
+        [
+          670.4487178357972,
+          0.0,
+          957.5
+        ],
+        [
+          0.0,
+          670.4487178357972,
+          397.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rvec": [
+        1.472435134381245,
+        0.4808610821821069,
+        -0.516837998682736
+      ],
+      "tvec": [
+        -8.063615052158807,
+        3.3410708784405885,
+        23.43591028358902
+      ],
+      "P": [
+        [
+          -34.297918406868476,
+          1167.8255853466258,
+          36.260008968990405,
+          17033.64372369518
+        ],
+        [
+          -260.03545876411573,
+          338.521729768611,
+          -652.1444103168161,
+          11555.791024375649
+        ],
+        [
+          -0.5970358406479445,
+          0.8009893730092854,
+          0.04431962666803375,
+          23.43591028358902
+        ]
+      ],
+      "camera_center_m": [
+        20.5682469087521,
+        -14.05078235403573,
+        2.2246949194725407
+      ],
+      "anchors_px": {
+        "0": {
+          "x": 724.57,
+          "y": 481.435
+        },
+        "1": {
+          "x": 945.602,
+          "y": 513.208
+        },
+        "4": {
+          "x": 729.405,
+          "y": 241.754
+        },
+        "5": {
+          "x": 939.054,
+          "y": 175.472
+        }
+      },
+      "reprojection_rmse_px": 6.3749929219485475,
+      "reprojection_rmse_diagonal_pct": 0.30745627201594056,
+      "per_vertex_error_px": {
+        "0": 11.861,
+        "1": 2.83,
+        "4": 3.346,
+        "5": 1.638
+      },
+      "planar_anchors": true,
+      "warnings": [
+        "Only four anchors: fitting RMSE does not validate the camera",
+        "Coplanar points: depth and pose weakly constrained; check another view"
+      ],
+      "allowed_polygon_px": null,
+      "protected_polygons_px": [
+        [
+          {
+            "x": 711.126,
+            "y": 400.921
+          },
+          {
+            "x": 712.454,
+            "y": 394.284
+          },
+          {
+            "x": 722.189,
+            "y": 383.663
+          },
+          {
+            "x": 741.66,
+            "y": 384.548
+          },
+          {
+            "x": 761.573,
+            "y": 382.778
+          },
+          {
+            "x": 768.211,
+            "y": 383.221
+          },
+          {
+            "x": 758.033,
+            "y": 401.364
+          },
+          {
+            "x": 763.344,
+            "y": 405.346
+          },
+          {
+            "x": 773.079,
+            "y": 415.082
+          },
+          {
+            "x": 777.504,
+            "y": 434.11
+          },
+          {
+            "x": 789.01,
+            "y": 438.093
+          },
+          {
+            "x": 791.222,
+            "y": 461.546
+          },
+          {
+            "x": 779.717,
+            "y": 485.0
+          },
+          {
+            "x": 761.573,
+            "y": 505.798
+          },
+          {
+            "x": 720.862,
+            "y": 492.523
+          },
+          {
+            "x": 711.126,
+            "y": 468.627
+          },
+          {
+            "x": 708.029,
+            "y": 439.863
+          },
+          {
+            "x": 707.586,
+            "y": 414.639
+          },
+          {
+            "x": 709.799,
+            "y": 398.709
+          }
+        ],
+        [
+          {
+            "x": 915.21,
+            "y": 521.616
+          },
+          {
+            "x": 924.142,
+            "y": 173.277
+          },
+          {
+            "x": 927.119,
+            "y": 163.154
+          },
+          {
+            "x": 934.86,
+            "y": 160.177
+          },
+          {
+            "x": 941.41,
+            "y": 154.222
+          },
+          {
+            "x": 944.983,
+            "y": 147.077
+          },
+          {
+            "x": 953.319,
+            "y": 145.29
+          },
+          {
+            "x": 952.675,
+            "y": 134.608
+          },
+          {
+            "x": 964.694,
+            "y": 118.584
+          },
+          {
+            "x": 971.905,
+            "y": 118.584
+          },
+          {
+            "x": 980.718,
+            "y": 123.391
+          },
+          {
+            "x": 991.134,
+            "y": 129.801
+          },
+          {
+            "x": 997.544,
+            "y": 132.205
+          },
+          {
+            "x": 1003.153,
+            "y": 134.608
+          },
+          {
+            "x": 1013.569,
+            "y": 138.615
+          },
+          {
+            "x": 1022.383,
+            "y": 143.422
+          },
+          {
+            "x": 1034.401,
+            "y": 144.223
+          },
+          {
+            "x": 1043.215,
+            "y": 140.217
+          },
+          {
+            "x": 1057.637,
+            "y": 133.006
+          },
+          {
+            "x": 1080.072,
+            "y": 544.844
+          },
+          {
+            "x": 914.215,
+            "y": 520.005
+          }
+        ]
+      ],
+      "manual_vp_guides_px": [],
+      "observed_axis_segments_px": [],
+      "mask_stats": {
+        "silhouette_px": 230854,
+        "editable_px": 170737,
+        "fraction_of_image_editable": 0.11214805327027604,
+        "fraction_silhouette_excluded": 0.2604113422336195,
+        "silhouette_bbox_xywh": [
+          727,
+          -351,
+          472,
+          864
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Vista_4.png",
+      "image_original_path": "/home/yor5/Documents/GitHub/prueba_urbana/prueba_parte_a/GeneraBuild_Desktop_v03/workspace/sites/gto_v5/inputs/Vista_4.png",
+      "image_relative": "inputs/Vista_4.png",
+      "image_sha256": "7779e81f1f120a8fcc46e4d92b7d9fccf185d90cae86db1d22c8be965569fd08",
+      "image_size_wh": [
+        1885,
+        969
+      ],
+      "mask_relative": "masks/mask_Vista_4.png",
+      "canny_relative": "canny/canny_Vista_4.png",
+      "preview_relative": "previews/preview_Vista_4.png",
+      "fov_horizontal_deg": 110.0,
+      "K": [
+        [
+          659.9456047626516,
+          0.0,
+          942.5
+        ],
+        [
+          0.0,
+          659.9456047626516,
+          484.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rvec": [
+        1.437485094609606,
+        -0.47541590808892487,
+        0.456896584160217
+      ],
+      "tvec": [
+        -5.715244856726828,
+        3.5182392674476013,
+        8.311261323061458
+      ],
+      "P": [
+        [
+          1077.4515269378173,
+          400.9969822367435,
+          46.19608838345742,
+          4061.6130736462037
+        ],
+        [
+          282.6224248598371,
+          451.040566339907,
+          -622.0574119224556,
+          6348.652652078692
+        ],
+        [
+          0.5659973650620942,
+          0.8211101899471982,
+          0.07365486207741209,
+          8.311261323061458
+        ]
+      ],
+      "camera_center_m": [
+        -0.03778872266143374,
+        -10.337517800203706,
+        2.693212549815027
+      ],
+      "anchors_px": {
+        "0": {
+          "x": 487.089,
+          "y": 765.498
+        },
+        "1": {
+          "x": 1046.939,
+          "y": 658.379
+        },
+        "4": {
+          "x": 502.753,
+          "y": 84.382
+        },
+        "5": {
+          "x": 1027.738,
+          "y": 233.439
+        }
+      },
+      "reprojection_rmse_px": 4.159028342271893,
+      "reprojection_rmse_diagonal_pct": 0.1962289205979334,
+      "per_vertex_error_px": {
+        "0": 2.288,
+        "1": 1.231,
+        "4": 3.915,
+        "5": 6.864
+      },
+      "planar_anchors": true,
+      "warnings": [
+        "Only four anchors: fitting RMSE does not validate the camera",
+        "Coplanar points: depth and pose weakly constrained; check another view"
+      ],
+      "allowed_polygon_px": null,
+      "protected_polygons_px": [],
+      "manual_vp_guides_px": [],
+      "observed_axis_segments_px": [],
+      "mask_stats": {
+        "silhouette_px": 386646,
+        "editable_px": 386646,
+        "fraction_of_image_editable": 0.2116792996690509,
+        "fraction_silhouette_excluded": 0.0,
+        "silhouette_bbox_xywh": [
+          488,
+          -851,
+          561,
+          1616
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Semiautomatic calibration; lengths and FOVs are approximate.",
+    "Fitting RMSE is not independent point validation.",
+    "Protected areas must be reviewed visually."
+  ]
+}

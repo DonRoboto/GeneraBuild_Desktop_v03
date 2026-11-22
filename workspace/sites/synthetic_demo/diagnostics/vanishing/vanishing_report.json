@@ -1,0 +1,1764 @@
+{
+  "site": "synthetic_demo",
+  "note": "Rectas OpenCV; VP teóricos de cámara y candidatos empíricos RANSAC.",
+  "views": [
+    {
+      "image_size_wh": [
+        820,
+        590
+      ],
+      "raw_line_count": 33,
+      "vanishing_points": [
+        {
+          "axis": 0,
+          "label": "X · fachada",
+          "xy": [
+            -772.7441537663026,
+            -27.672006540442208
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.9993594361798737,
+            0.03578711106313391
+          ]
+        },
+        {
+          "axis": 1,
+          "label": "Y · profundidad",
+          "xy": [
+            848.219005932317,
+            -27.672006540442435
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.9994682728792124,
+            -0.03260631085916172
+          ]
+        },
+        {
+          "axis": 2,
+          "label": "Z · vertical",
+          "xy": [
+            410.0000000000001,
+            1578.6060616835116
+          ],
+          "at_infinity": false,
+          "direction": [
+            -0.2513825411220704,
+            -0.9678878127236704
+          ]
+        }
+      ],
+      "empirical_vps": [
+        {
+          "name": "VP observado 1",
+          "xy": [
+            272.85833788637603,
+            30.97343320375444
+          ],
+          "support": 18,
+          "median_distance_px": 2.2996478002925347,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        },
+        {
+          "name": "VP observado 2",
+          "xy": [
+            851.8592386839923,
+            -29.464500632399563
+          ],
+          "support": 8,
+          "median_distance_px": 1.9085369612046814,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        }
+      ],
+      "segments": [
+        {
+          "xyxy": [
+            23.0,
+            26.0,
+            172.0,
+            29.0
+          ],
+          "axis": 0,
+          "error_deg": 2.474
+        },
+        {
+          "xyxy": [
+            249.0,
+            30.0,
+            380.0,
+            32.0
+          ],
+          "axis": 0,
+          "error_deg": 2.214
+        },
+        {
+          "xyxy": [
+            250.0,
+            27.0,
+            380.0,
+            31.0
+          ],
+          "axis": 0,
+          "error_deg": 1.22
+        },
+        {
+          "xyxy": [
+            28.0,
+            32.0,
+            147.0,
+            32.0
+          ],
+          "axis": 0,
+          "error_deg": 3.968
+        },
+        {
+          "xyxy": [
+            250.0,
+            34.0,
+            359.0,
+            34.0
+          ],
+          "axis": 0,
+          "error_deg": 3.277
+        },
+        {
+          "xyxy": [
+            250.0,
+            26.0,
+            359.0,
+            26.0
+          ],
+          "axis": 0,
+          "error_deg": 2.852
+        },
+        {
+          "xyxy": [
+            251.0,
+            36.0,
+            357.0,
+            37.0
+          ],
+          "axis": 0,
+          "error_deg": 2.87
+        },
+        {
+          "xyxy": [
+            308.0,
+            350.0,
+            408.0,
+            384.0
+          ],
+          "axis": 0,
+          "error_deg": 0.463
+        },
+        {
+          "xyxy": [
+            314.0,
+            430.0,
+            408.0,
+            470.0
+          ],
+          "axis": 0,
+          "error_deg": 0.205
+        },
+        {
+          "xyxy": [
+            251.0,
+            24.0,
+            353.0,
+            23.0
+          ],
+          "axis": 0,
+          "error_deg": 3.288
+        },
+        {
+          "xyxy": [
+            316.0,
+            434.0,
+            404.0,
+            471.0
+          ],
+          "axis": 0,
+          "error_deg": 0.168
+        },
+        {
+          "xyxy": [
+            24.0,
+            37.0,
+            112.0,
+            37.0
+          ],
+          "axis": 0,
+          "error_deg": 4.399
+        },
+        {
+          "xyxy": [
+            23.0,
+            27.0,
+            106.0,
+            29.0
+          ],
+          "axis": 0,
+          "error_deg": 2.424
+        },
+        {
+          "xyxy": [
+            101.0,
+            26.0,
+            172.0,
+            27.0
+          ],
+          "axis": 0,
+          "error_deg": 2.603
+        },
+        {
+          "xyxy": [
+            24.0,
+            23.0,
+            81.0,
+            23.0
+          ],
+          "axis": 0,
+          "error_deg": 3.514
+        },
+        {
+          "xyxy": [
+            124.0,
+            31.0,
+            172.0,
+            31.0
+          ],
+          "axis": 0,
+          "error_deg": 3.646
+        },
+        {
+          "xyxy": [
+            125.0,
+            23.0,
+            172.0,
+            26.0
+          ],
+          "axis": 0,
+          "error_deg": 0.411
+        },
+        {
+          "xyxy": [
+            125.0,
+            36.0,
+            171.0,
+            36.0
+          ],
+          "axis": 0,
+          "error_deg": 3.956
+        },
+        {
+          "xyxy": [
+            250.0,
+            33.0,
+            295.0,
+            33.0
+          ],
+          "axis": 0,
+          "error_deg": 3.322
+        },
+        {
+          "xyxy": [
+            23.0,
+            35.0,
+            172.0,
+            33.0
+          ],
+          "axis": 1,
+          "error_deg": 3.927
+        },
+        {
+          "xyxy": [
+            307.0,
+            354.0,
+            427.0,
+            270.0
+          ],
+          "axis": 1,
+          "error_deg": 0.225
+        },
+        {
+          "xyxy": [
+            307.0,
+            355.0,
+            424.0,
+            273.0
+          ],
+          "axis": 1,
+          "error_deg": 0.266
+        },
+        {
+          "xyxy": [
+            407.0,
+            471.0,
+            501.0,
+            366.0
+          ],
+          "axis": 1,
+          "error_deg": 0.374
+        },
+        {
+          "xyxy": [
+            408.0,
+            464.0,
+            502.0,
+            360.0
+          ],
+          "axis": 1,
+          "error_deg": 0.301
+        },
+        {
+          "xyxy": [
+            308.0,
+            349.0,
+            421.0,
+            270.0
+          ],
+          "axis": 1,
+          "error_deg": 0.08
+        },
+        {
+          "xyxy": [
+            404.0,
+            383.0,
+            504.0,
+            290.0
+          ],
+          "axis": 1,
+          "error_deg": 0.192
+        },
+        {
+          "xyxy": [
+            432.0,
+            363.0,
+            503.0,
+            297.0
+          ],
+          "axis": 1,
+          "error_deg": 0.302
+        },
+        {
+          "xyxy": [
+            447.0,
+            348.0,
+            506.0,
+            292.0
+          ],
+          "axis": 1,
+          "error_deg": 0.42
+        },
+        {
+          "xyxy": [
+            273.0,
+            589.0,
+            273.0,
+            295.0
+          ],
+          "axis": 2,
+          "error_deg": 6.873
+        },
+        {
+          "xyxy": [
+            311.0,
+            348.0,
+            318.0,
+            434.0
+          ],
+          "axis": 2,
+          "error_deg": 0.056
+        },
+        {
+          "xyxy": [
+            403.0,
+            467.0,
+            403.0,
+            383.0
+          ],
+          "axis": 2,
+          "error_deg": 0.348
+        },
+        {
+          "xyxy": [
+            407.0,
+            464.0,
+            407.0,
+            381.0
+          ],
+          "axis": 2,
+          "error_deg": 0.149
+        }
+      ],
+      "stats": [
+        {
+          "axis": "X · fachada",
+          "n_segments": 19,
+          "median_angular_error_deg": 2.852,
+          "vp_x": -772.7,
+          "vp_y": -27.7,
+          "vp_at_infinity": false
+        },
+        {
+          "axis": "Y · profundidad",
+          "n_segments": 9,
+          "median_angular_error_deg": 0.301,
+          "vp_x": 848.2,
+          "vp_y": -27.7,
+          "vp_at_infinity": false
+        },
+        {
+          "axis": "Z · vertical",
+          "n_segments": 4,
+          "median_angular_error_deg": 0.248,
+          "vp_x": 410.0,
+          "vp_y": 1578.6,
+          "vp_at_infinity": false
+        }
+      ],
+      "note": "Fugas teóricas K·R; segmentos OpenCV (Canny + HoughLinesP) agrupados por ángulo. No equivale a puntos de fuga medidos independientemente.",
+      "manual_annotations": {
+        "observed_total": 6,
+        "axes": [
+          {
+            "axis": "X",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 1.705429896718539e-14,
+            "max_angle_to_camera_deg": 2.6402435680587285e-14,
+            "manual_vp": {
+              "axis": "X",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                1167.9327990439217,
+                679.4752890502782
+              ],
+              "median_line_distance_px": 104.35540425948787,
+              "max_line_distance_px": 104.99369854833242
+            }
+          },
+          {
+            "axis": "Y",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 1.3916110274139663e-14,
+            "max_angle_to_camera_deg": 1.9073820197834925e-14,
+            "manual_vp": {
+              "axis": "Y",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                -892.9905180448236,
+                1688.0703046185165
+              ],
+              "median_line_distance_px": 160.44690331650898,
+              "max_line_distance_px": 160.87925330026695
+            }
+          },
+          {
+            "axis": "Z",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 3.906295777581967e-14,
+            "max_angle_to_camera_deg": 4.3488378486635034e-14,
+            "manual_vp": {
+              "axis": "Z",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                320.0472409558829,
+                -500.0258498012754
+              ],
+              "median_line_distance_px": 80.99570523652204,
+              "max_line_distance_px": 81.21543985027594
+            }
+          }
+        ],
+        "note": "Las guías por punto no se usan aquí: dependen del VP de la propia cámara."
+      },
+      "overlay": "vanishing_view_1.png"
+    },
+    {
+      "image_size_wh": [
+        820,
+        590
+      ],
+      "raw_line_count": 37,
+      "vanishing_points": [
+        {
+          "axis": 0,
+          "label": "X · fachada",
+          "xy": [
+            1205.4279202339087,
+            13.582126325170817
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.999936528071689,
+            0.011266757649671
+          ]
+        },
+        {
+          "axis": 1,
+          "label": "Y · profundidad",
+          "xy": [
+            -154.07076891933528,
+            13.582126325163607
+          ],
+          "at_infinity": false,
+          "direction": [
+            -0.9961368397429785,
+            0.08781455748833139
+          ]
+        },
+        {
+          "axis": 2,
+          "label": "Z · vertical",
+          "xy": [
+            409.999999999993,
+            1607.9287565775057
+          ],
+          "at_infinity": false,
+          "direction": [
+            -0.24708055325287726,
+            -0.9689949433326535
+          ]
+        }
+      ],
+      "empirical_vps": [
+        {
+          "name": "VP observado 1",
+          "xy": [
+            273.2229374038019,
+            30.518087920718187
+          ],
+          "support": 23,
+          "median_distance_px": 3.4883329493863173,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        },
+        {
+          "name": "VP observado 2",
+          "xy": [
+            -88.12971846548317,
+            55.34898822885262
+          ],
+          "support": 6,
+          "median_distance_px": 1.8885375798534443,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        },
+        {
+          "name": "VP observado 3",
+          "xy": [
+            919.7765187973619,
+            161.17681616064235
+          ],
+          "support": 5,
+          "median_distance_px": 1.6160879880006294,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        }
+      ],
+      "segments": [
+        {
+          "xyxy": [
+            23.0,
+            27.0,
+            172.0,
+            29.0
+          ],
+          "axis": 0,
+          "error_deg": 1.515
+        },
+        {
+          "xyxy": [
+            23.0,
+            26.0,
+            172.0,
+            26.0
+          ],
+          "axis": 0,
+          "error_deg": 0.642
+        },
+        {
+          "xyxy": [
+            23.0,
+            33.0,
+            172.0,
+            33.0
+          ],
+          "axis": 0,
+          "error_deg": 1.004
+        },
+        {
+          "xyxy": [
+            23.0,
+            34.0,
+            171.0,
+            34.0
+          ],
+          "axis": 0,
+          "error_deg": 1.055
+        },
+        {
+          "xyxy": [
+            28.0,
+            32.0,
+            147.0,
+            32.0
+          ],
+          "axis": 0,
+          "error_deg": 0.944
+        },
+        {
+          "xyxy": [
+            251.0,
+            36.0,
+            358.0,
+            36.0
+          ],
+          "axis": 0,
+          "error_deg": 1.425
+        },
+        {
+          "xyxy": [
+            252.0,
+            23.0,
+            357.0,
+            23.0
+          ],
+          "axis": 0,
+          "error_deg": 0.599
+        },
+        {
+          "xyxy": [
+            252.0,
+            37.0,
+            357.0,
+            37.0
+          ],
+          "axis": 0,
+          "error_deg": 1.489
+        },
+        {
+          "xyxy": [
+            432.0,
+            428.0,
+            520.0,
+            379.0
+          ],
+          "axis": 0,
+          "error_deg": 0.983
+        },
+        {
+          "xyxy": [
+            432.0,
+            458.0,
+            518.0,
+            406.0
+          ],
+          "axis": 0,
+          "error_deg": 1.354
+        },
+        {
+          "xyxy": [
+            432.0,
+            432.0,
+            519.0,
+            384.0
+          ],
+          "axis": 0,
+          "error_deg": 0.502
+        },
+        {
+          "xyxy": [
+            432.0,
+            485.0,
+            515.0,
+            435.0
+          ],
+          "axis": 0,
+          "error_deg": 0.315
+        },
+        {
+          "xyxy": [
+            433.0,
+            398.0,
+            518.0,
+            357.0
+          ],
+          "axis": 0,
+          "error_deg": 0.749
+        },
+        {
+          "xyxy": [
+            437.0,
+            393.0,
+            520.0,
+            353.0
+          ],
+          "axis": 0,
+          "error_deg": 0.579
+        },
+        {
+          "xyxy": [
+            436.0,
+            487.0,
+            514.0,
+            438.0
+          ],
+          "axis": 0,
+          "error_deg": 0.563
+        },
+        {
+          "xyxy": [
+            24.0,
+            37.0,
+            102.0,
+            35.0
+          ],
+          "axis": 0,
+          "error_deg": 0.345
+        },
+        {
+          "xyxy": [
+            309.0,
+            33.0,
+            380.0,
+            31.0
+          ],
+          "axis": 0,
+          "error_deg": 0.388
+        },
+        {
+          "xyxy": [
+            124.0,
+            30.0,
+            195.0,
+            30.0
+          ],
+          "axis": 0,
+          "error_deg": 0.899
+        },
+        {
+          "xyxy": [
+            249.0,
+            31.0,
+            314.0,
+            31.0
+          ],
+          "axis": 0,
+          "error_deg": 1.08
+        },
+        {
+          "xyxy": [
+            24.0,
+            23.0,
+            79.0,
+            24.0
+          ],
+          "axis": 0,
+          "error_deg": 1.534
+        },
+        {
+          "xyxy": [
+            60.0,
+            37.0,
+            112.0,
+            37.0
+          ],
+          "axis": 0,
+          "error_deg": 1.198
+        },
+        {
+          "xyxy": [
+            124.0,
+            28.0,
+            172.0,
+            27.0
+          ],
+          "axis": 0,
+          "error_deg": 0.439
+        },
+        {
+          "xyxy": [
+            125.0,
+            24.0,
+            171.0,
+            24.0
+          ],
+          "axis": 0,
+          "error_deg": 0.564
+        },
+        {
+          "xyxy": [
+            125.0,
+            35.0,
+            171.0,
+            35.0
+          ],
+          "axis": 0,
+          "error_deg": 1.16
+        },
+        {
+          "xyxy": [
+            374.0,
+            284.0,
+            522.0,
+            356.0
+          ],
+          "axis": 1,
+          "error_deg": 1.031
+        },
+        {
+          "xyxy": [
+            303.0,
+            312.0,
+            437.0,
+            399.0
+          ],
+          "axis": 1,
+          "error_deg": 0.128
+        },
+        {
+          "xyxy": [
+            308.0,
+            311.0,
+            439.0,
+            396.0
+          ],
+          "axis": 1,
+          "error_deg": 0.184
+        },
+        {
+          "xyxy": [
+            301.0,
+            310.0,
+            425.0,
+            391.0
+          ],
+          "axis": 1,
+          "error_deg": 0.066
+        },
+        {
+          "xyxy": [
+            231.0,
+            25.0,
+            359.0,
+            27.0
+          ],
+          "axis": 1,
+          "error_deg": 0.689
+        },
+        {
+          "xyxy": [
+            250.0,
+            26.0,
+            360.0,
+            28.0
+          ],
+          "axis": 1,
+          "error_deg": 0.633
+        },
+        {
+          "xyxy": [
+            250.0,
+            33.0,
+            359.0,
+            35.0
+          ],
+          "axis": 1,
+          "error_deg": 1.498
+        },
+        {
+          "xyxy": [
+            435.0,
+            310.0,
+            520.0,
+            352.0
+          ],
+          "axis": 1,
+          "error_deg": 0.389
+        },
+        {
+          "xyxy": [
+            249.0,
+            28.0,
+            341.0,
+            31.0
+          ],
+          "axis": 1,
+          "error_deg": 0.162
+        },
+        {
+          "xyxy": [
+            251.0,
+            24.0,
+            335.0,
+            25.0
+          ],
+          "axis": 1,
+          "error_deg": 0.717
+        },
+        {
+          "xyxy": [
+            443.0,
+            395.0,
+            513.0,
+            440.0
+          ],
+          "axis": 1,
+          "error_deg": 0.155
+        },
+        {
+          "xyxy": [
+            273.0,
+            589.0,
+            273.0,
+            295.0
+          ],
+          "axis": 2,
+          "error_deg": 6.702
+        }
+      ],
+      "stats": [
+        {
+          "axis": "X · fachada",
+          "n_segments": 24,
+          "median_angular_error_deg": 0.922,
+          "vp_x": 1205.4,
+          "vp_y": 13.6,
+          "vp_at_infinity": false
+        },
+        {
+          "axis": "Y · profundidad",
+          "n_segments": 11,
+          "median_angular_error_deg": 0.389,
+          "vp_x": -154.1,
+          "vp_y": 13.6,
+          "vp_at_infinity": false
+        },
+        {
+          "axis": "Z · vertical",
+          "n_segments": 1,
+          "median_angular_error_deg": 6.702,
+          "vp_x": 410.0,
+          "vp_y": 1607.9,
+          "vp_at_infinity": false
+        }
+      ],
+      "note": "Fugas teóricas K·R; segmentos OpenCV (Canny + HoughLinesP) agrupados por ángulo. No equivale a puntos de fuga medidos independientemente.",
+      "manual_annotations": {
+        "observed_total": 6,
+        "axes": [
+          {
+            "axis": "X",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 5.851625816567069e-14,
+            "max_angle_to_camera_deg": 7.969780638465731e-14,
+            "manual_vp": {
+              "axis": "X",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                -639.7833074020184,
+                954.0663367432426
+              ],
+              "median_line_distance_px": 162.28917855388133,
+              "max_line_distance_px": 163.43785755682882
+            }
+          },
+          {
+            "axis": "Y",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 1.4767946673816454e-14,
+            "max_angle_to_camera_deg": 1.7729596546012676e-14,
+            "manual_vp": {
+              "axis": "Y",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                1697.4150525716575,
+                1340.7999612264873
+              ],
+              "median_line_distance_px": 126.38392429859206,
+              "max_line_distance_px": 126.80902056444893
+            }
+          },
+          {
+            "axis": "Z",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 5.402312507211651e-14,
+            "max_angle_to_camera_deg": 5.6210630367693124e-14,
+            "manual_vp": {
+              "axis": "Z",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                523.7839809931918,
+                -482.2698974620671
+              ],
+              "median_line_distance_px": 69.78222786325932,
+              "max_line_distance_px": 69.99479894425436
+            }
+          }
+        ],
+        "note": "Las guías por punto no se usan aquí: dependen del VP de la propia cámara."
+      },
+      "overlay": "vanishing_view_2.png"
+    },
+    {
+      "image_size_wh": [
+        820,
+        590
+      ],
+      "raw_line_count": 41,
+      "vanishing_points": [
+        {
+          "axis": 0,
+          "label": "X · fachada",
+          "xy": [
+            -2179.1970525190354,
+            364.3728514436665
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.9863076712189685,
+            -0.1649156684327328
+          ]
+        },
+        {
+          "axis": 1,
+          "label": "Y · profundidad",
+          "xy": [
+            571.8248157824357,
+            364.3728514436673
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.8433377976451407,
+            0.5373838098259414
+          ]
+        },
+        {
+          "axis": 2,
+          "label": "Z · vertical",
+          "xy": [
+            410.0000000000018,
+            -5675.401027370521
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.07205381677132866,
+            -0.9974007456828393
+          ]
+        }
+      ],
+      "empirical_vps": [
+        {
+          "name": "VP observado 1",
+          "xy": [
+            271.80691232581273,
+            29.769653738983777
+          ],
+          "support": 25,
+          "median_distance_px": 3.230346261016325,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        },
+        {
+          "name": "VP observado 2",
+          "xy": [
+            -1781.3544756904203,
+            383.14613332514483
+          ],
+          "support": 7,
+          "median_distance_px": 3.1677116029847476,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        },
+        {
+          "name": "VP observado 3",
+          "xy": [
+            477.0960742182579,
+            318.35817094217185
+          ],
+          "support": 5,
+          "median_distance_px": 1.8070289510431405,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        }
+      ],
+      "segments": [
+        {
+          "xyxy": [
+            0.0,
+            294.0,
+            612.0,
+            294.0
+          ],
+          "axis": 0,
+          "error_deg": 1.622
+        },
+        {
+          "xyxy": [
+            262.0,
+            453.0,
+            480.0,
+            460.0
+          ],
+          "axis": 0,
+          "error_deg": 0.23
+        },
+        {
+          "xyxy": [
+            262.0,
+            449.0,
+            475.0,
+            456.0
+          ],
+          "axis": 0,
+          "error_deg": 0.099
+        },
+        {
+          "xyxy": [
+            280.0,
+            516.0,
+            477.0,
+            529.0
+          ],
+          "axis": 0,
+          "error_deg": 0.238
+        },
+        {
+          "xyxy": [
+            269.0,
+            320.0,
+            450.0,
+            317.0
+          ],
+          "axis": 0,
+          "error_deg": 0.086
+        },
+        {
+          "xyxy": [
+            307.0,
+            323.0,
+            485.0,
+            320.0
+          ],
+          "axis": 0,
+          "error_deg": 0.012
+        },
+        {
+          "xyxy": [
+            266.0,
+            519.0,
+            416.0,
+            529.0
+          ],
+          "axis": 0,
+          "error_deg": 0.19
+        },
+        {
+          "xyxy": [
+            23.0,
+            26.0,
+            172.0,
+            26.0
+          ],
+          "axis": 0,
+          "error_deg": 8.454
+        },
+        {
+          "xyxy": [
+            23.0,
+            34.0,
+            171.0,
+            34.0
+          ],
+          "axis": 0,
+          "error_deg": 8.258
+        },
+        {
+          "xyxy": [
+            23.0,
+            27.0,
+            169.0,
+            27.0
+          ],
+          "axis": 0,
+          "error_deg": 8.435
+        },
+        {
+          "xyxy": [
+            249.0,
+            30.0,
+            380.0,
+            30.0
+          ],
+          "axis": 0,
+          "error_deg": 7.637
+        },
+        {
+          "xyxy": [
+            259.0,
+            31.0,
+            380.0,
+            31.0
+          ],
+          "axis": 0,
+          "error_deg": 7.599
+        },
+        {
+          "xyxy": [
+            396.0,
+            340.0,
+            516.0,
+            338.0
+          ],
+          "axis": 0,
+          "error_deg": 0.403
+        },
+        {
+          "xyxy": [
+            231.0,
+            25.0,
+            347.0,
+            25.0
+          ],
+          "axis": 0,
+          "error_deg": 7.829
+        },
+        {
+          "xyxy": [
+            249.0,
+            28.0,
+            359.0,
+            26.0
+          ],
+          "axis": 0,
+          "error_deg": 6.695
+        },
+        {
+          "xyxy": [
+            250.0,
+            33.0,
+            359.0,
+            35.0
+          ],
+          "axis": 0,
+          "error_deg": 8.628
+        },
+        {
+          "xyxy": [
+            250.0,
+            35.0,
+            358.0,
+            36.0
+          ],
+          "axis": 0,
+          "error_deg": 8.075
+        },
+        {
+          "xyxy": [
+            252.0,
+            23.0,
+            357.0,
+            23.0
+          ],
+          "axis": 0,
+          "error_deg": 7.826
+        },
+        {
+          "xyxy": [
+            321.0,
+            389.0,
+            426.0,
+            389.0
+          ],
+          "axis": 0,
+          "error_deg": 0.553
+        },
+        {
+          "xyxy": [
+            317.0,
+            385.0,
+            422.0,
+            385.0
+          ],
+          "axis": 0,
+          "error_deg": 0.464
+        },
+        {
+          "xyxy": [
+            252.0,
+            37.0,
+            357.0,
+            37.0
+          ],
+          "axis": 0,
+          "error_deg": 7.509
+        },
+        {
+          "xyxy": [
+            23.0,
+            33.0,
+            128.0,
+            33.0
+          ],
+          "axis": 0,
+          "error_deg": 8.361
+        },
+        {
+          "xyxy": [
+            249.0,
+            29.0,
+            351.0,
+            29.0
+          ],
+          "axis": 0,
+          "error_deg": 7.704
+        },
+        {
+          "xyxy": [
+            77.0,
+            29.0,
+            172.0,
+            27.0
+          ],
+          "axis": 0,
+          "error_deg": 7.101
+        },
+        {
+          "xyxy": [
+            265.0,
+            323.0,
+            386.0,
+            340.0
+          ],
+          "axis": 1,
+          "error_deg": 0.396
+        },
+        {
+          "xyxy": [
+            261.0,
+            516.0,
+            264.0,
+            348.0
+          ],
+          "axis": 2,
+          "error_deg": 0.36
+        },
+        {
+          "xyxy": [
+            474.0,
+            335.0,
+            476.0,
+            473.0
+          ],
+          "axis": 2,
+          "error_deg": 0.218
+        },
+        {
+          "xyxy": [
+            513.0,
+            335.0,
+            515.0,
+            470.0
+          ],
+          "axis": 2,
+          "error_deg": 0.132
+        },
+        {
+          "xyxy": [
+            266.0,
+            490.0,
+            268.0,
+            379.0
+          ],
+          "axis": 2,
+          "error_deg": 0.308
+        },
+        {
+          "xyxy": [
+            480.0,
+            445.0,
+            481.0,
+            531.0
+          ],
+          "axis": 2,
+          "error_deg": 0.011
+        },
+        {
+          "xyxy": [
+            479.0,
+            426.0,
+            479.0,
+            356.0
+          ],
+          "axis": 2,
+          "error_deg": 0.652
+        },
+        {
+          "xyxy": [
+            518.0,
+            370.0,
+            518.0,
+            423.0
+          ],
+          "axis": 2,
+          "error_deg": 1.019
+        }
+      ],
+      "stats": [
+        {
+          "axis": "X · fachada",
+          "n_segments": 24,
+          "median_angular_error_deg": 7.305,
+          "vp_x": -2179.2,
+          "vp_y": 364.4,
+          "vp_at_infinity": false
+        },
+        {
+          "axis": "Y · profundidad",
+          "n_segments": 1,
+          "median_angular_error_deg": 0.396,
+          "vp_x": 571.8,
+          "vp_y": 364.4,
+          "vp_at_infinity": false
+        },
+        {
+          "axis": "Z · vertical",
+          "n_segments": 7,
+          "median_angular_error_deg": 0.308,
+          "vp_x": 410.0,
+          "vp_y": -5675.4,
+          "vp_at_infinity": false
+        }
+      ],
+      "note": "Fugas teóricas K·R; segmentos OpenCV (Canny + HoughLinesP) agrupados por ángulo. No equivale a puntos de fuga medidos independientemente.",
+      "manual_annotations": {
+        "observed_total": 6,
+        "axes": [
+          {
+            "axis": "X",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 1.7367564224654506e-14,
+            "max_angle_to_camera_deg": 2.6766952796335405e-14,
+            "manual_vp": {
+              "axis": "X",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                809.9567142722026,
+                512.1850430711038
+              ],
+              "median_line_distance_px": 39.549930844108616,
+              "max_line_distance_px": 39.80122747689254
+            }
+          },
+          {
+            "axis": "Y",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 2.8822388355899264e-14,
+            "max_angle_to_camera_deg": 3.755457122816122e-14,
+            "manual_vp": {
+              "axis": "Y",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                -10413.618528296694,
+                10832.696796773304
+              ],
+              "median_line_distance_px": 4499.5008554533215,
+              "max_line_distance_px": 4516.067559351753
+            }
+          },
+          {
+            "axis": "Z",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 1.1522755413622751e-14,
+            "max_angle_to_camera_deg": 1.3514812701409745e-14,
+            "manual_vp": {
+              "axis": "Z",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                370.5047567503052,
+                465.9265416714327
+              ],
+              "median_line_distance_px": 107.15696217362667,
+              "max_line_distance_px": 107.57653392718322
+            }
+          }
+        ],
+        "note": "Las guías por punto no se usan aquí: dependen del VP de la propia cámara."
+      },
+      "overlay": "vanishing_view_3.png"
+    },
+    {
+      "image_size_wh": [
+        820,
+        590
+      ],
+      "raw_line_count": 31,
+      "vanishing_points": [
+        {
+          "axis": 0,
+          "label": "X · fachada",
+          "xy": [
+            -304.0369512118707,
+            336.5585533269008
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.6703452435952928,
+            -0.7420493611540727
+          ]
+        },
+        {
+          "axis": 1,
+          "label": "Y · profundidad",
+          "xy": [
+            527.8439890183662,
+            336.5585533269006
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.843185191341818,
+            0.537623225969509
+          ]
+        },
+        {
+          "axis": 2,
+          "label": "Z · vertical",
+          "xy": [
+            409.99999999999943,
+            -1688.174164759626
+          ],
+          "at_infinity": false,
+          "direction": [
+            0.23600539767767872,
+            -0.9717517441543394
+          ]
+        }
+      ],
+      "empirical_vps": [
+        {
+          "name": "VP observado 1",
+          "xy": [
+            272.47015759893236,
+            30.44049540452278
+          ],
+          "support": 21,
+          "median_distance_px": 3.559504595477257,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        },
+        {
+          "name": "VP observado 2",
+          "xy": [
+            -294.73468618440086,
+            335.5546370718612
+          ],
+          "support": 7,
+          "median_distance_px": 1.8390739735976007,
+          "method": "HoughLinesP + RANSAC + SVD (sin cámaras)"
+        }
+      ],
+      "segments": [
+        {
+          "xyxy": [
+            0.0,
+            294.0,
+            612.0,
+            294.0
+          ],
+          "axis": 0,
+          "error_deg": 3.991
+        },
+        {
+          "xyxy": [
+            333.0,
+            397.0,
+            434.0,
+            407.0
+          ],
+          "axis": 0,
+          "error_deg": 0.217
+        },
+        {
+          "xyxy": [
+            330.0,
+            369.0,
+            431.0,
+            374.0
+          ],
+          "axis": 0,
+          "error_deg": 0.088
+        },
+        {
+          "xyxy": [
+            331.0,
+            365.0,
+            431.0,
+            370.0
+          ],
+          "axis": 0,
+          "error_deg": 0.276
+        },
+        {
+          "xyxy": [
+            332.0,
+            339.0,
+            430.0,
+            339.0
+          ],
+          "axis": 0,
+          "error_deg": 0.204
+        },
+        {
+          "xyxy": [
+            332.0,
+            335.0,
+            430.0,
+            335.0
+          ],
+          "axis": 0,
+          "error_deg": 0.13
+        },
+        {
+          "xyxy": [
+            333.0,
+            401.0,
+            428.0,
+            411.0
+          ],
+          "axis": 0,
+          "error_deg": 0.217
+        },
+        {
+          "xyxy": [
+            363.0,
+            307.0,
+            438.0,
+            304.0
+          ],
+          "axis": 0,
+          "error_deg": 0.234
+        },
+        {
+          "xyxy": [
+            273.0,
+            589.0,
+            273.0,
+            295.0
+          ],
+          "axis": 2,
+          "error_deg": 3.68
+        },
+        {
+          "xyxy": [
+            430.0,
+            316.0,
+            431.0,
+            410.0
+          ],
+          "axis": 2,
+          "error_deg": 0.037
+        },
+        {
+          "xyxy": [
+            329.0,
+            397.0,
+            332.0,
+            333.0
+          ],
+          "axis": 2,
+          "error_deg": 0.466
+        }
+      ],
+      "stats": [
+        {
+          "axis": "X · fachada",
+          "n_segments": 8,
+          "median_angular_error_deg": 0.217,
+          "vp_x": -304.0,
+          "vp_y": 336.6,
+          "vp_at_infinity": false
+        },
+        {
+          "axis": "Y · profundidad",
+          "n_segments": 0,
+          "median_angular_error_deg": null,
+          "vp_x": 527.8,
+          "vp_y": 336.6,
+          "vp_at_infinity": false
+        },
+        {
+          "axis": "Z · vertical",
+          "n_segments": 3,
+          "median_angular_error_deg": 0.466,
+          "vp_x": 410.0,
+          "vp_y": -1688.2,
+          "vp_at_infinity": false
+        }
+      ],
+      "note": "Fugas teóricas K·R; segmentos OpenCV (Canny + HoughLinesP) agrupados por ángulo. No equivale a puntos de fuga medidos independientemente.",
+      "manual_annotations": {
+        "observed_total": 6,
+        "axes": [
+          {
+            "axis": "X",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 3.433925840974769e-14,
+            "max_angle_to_camera_deg": 4.298438213973117e-14,
+            "manual_vp": {
+              "axis": "X",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                1851.0986055245417,
+                499.4742659245078
+              ],
+              "median_line_distance_px": 48.92918705233042,
+              "max_line_distance_px": 49.00189756576768
+            }
+          },
+          {
+            "axis": "Y",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 1.8377375835119405e-14,
+            "max_angle_to_camera_deg": 2.4913497229567478e-14,
+            "manual_vp": {
+              "axis": "Y",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                -10183.211510201605,
+                5777.536869971838
+              ],
+              "median_line_distance_px": 1938.7175635710414,
+              "max_line_distance_px": 1941.1868892392436
+            }
+          },
+          {
+            "axis": "Z",
+            "observed_segments": 2,
+            "mean_angle_to_camera_deg": 8.971178948172802e-15,
+            "max_angle_to_camera_deg": 1.5618674666707557e-14,
+            "manual_vp": {
+              "axis": "Z",
+              "n_lines": 2,
+              "status": "ok",
+              "xy": [
+                374.29295089933663,
+                809.5791116755929
+              ],
+              "median_line_distance_px": 58.609735872085835,
+              "max_line_distance_px": 58.68548675755448
+            }
+          }
+        ],
+        "note": "Las guías por punto no se usan aquí: dependen del VP de la propia cámara."
+      },
+      "overlay": "vanishing_view_4.png"
+    }
+  ]
+}

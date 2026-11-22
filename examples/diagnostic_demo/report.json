@@ -1,0 +1,21 @@
+{
+  "views": [
+    {
+      "view": 1,
+      "occlusion_pixels": 5963
+    },
+    {
+      "view": 2,
+      "occlusion_pixels": 12607
+    },
+    {
+      "view": 3,
+      "occlusion_pixels": 0
+    },
+    {
+      "view": 4,
+      "occlusion_pixels": 2296
+    }
+  ],
+  "experimental": true
+}

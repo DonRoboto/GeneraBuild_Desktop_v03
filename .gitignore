@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+workspace/sites/*/runs/
+workspace/sites/*/context_diagnostics/
+*.log

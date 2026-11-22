@@ -1,0 +1,53 @@
+{
+  "event": "accepted_joint_camera_calibration",
+  "accepted_utc": "2026-11-21T20:07:55.404559+00:00",
+  "original_calibration_sha256": "4145069f5436fed8d61c5b4bdf38db1649de6608c2357555728561472eddf3e1",
+  "new_calibration_sha256": "e60f9a6f3a780dca642878005385ac2b44ce8d2aeace63067cf8fbea41c83a47",
+  "backup_files": [
+    "calibration_backup_20261121T200755_402940Z.json"
+  ],
+  "camera_report": {
+    "method": "joint_geometry_and_poses_fixed_FOV",
+    "description": "Restricted BA: four poses + shared width/depth. H0 height and all FOVs fixed.",
+    "solver_success": true,
+    "solver_message": "`ftol` termination condition is satisfied.",
+    "nfev": 7,
+    "initial_pooled_rmse_px": 7.05036296938583,
+    "refined_pooled_rmse_px": 5.590652398846633,
+    "reference_dimensions_m": {
+      "W": 10.0,
+      "D": 20.0,
+      "H": 9.0
+    },
+    "suggested_dimensions_m": {
+      "W": 9.59385334939935,
+      "D": 21.666915606133514,
+      "H": 9.0
+    },
+    "width_change_pct": -4.061466506006505,
+    "depth_change_pct": 8.334578030667572,
+    "total_observations": 20,
+    "observed_manual_segments": 0,
+    "manual_line_weight_px_per_degree": 1.5,
+    "initial_manual_mean_angular_error_deg": null,
+    "refined_manual_mean_angular_error_deg": null,
+    "n_views_with_depth_evidence": 2,
+    "fovs_locked": [
+      55.0,
+      55.0,
+      110.0,
+      110.0
+    ],
+    "warnings": [
+      "Joint fitting does not establish absolute metric accuracy or replace survey data.",
+      "RMSE uses fitted points; validate using corners or edges excluded from fitting.",
+      "An incorrect prism footprint can bias all fitted camera poses.",
+      "Only REAL observed structural edges provide angular constraints; VP guides are not independent evidence."
+    ]
+  },
+  "notes": [
+    "Existing photographs and historical runs were not overwritten.",
+    "Saved 2.5D neighbor coordinates must be reviewed after geometry changes.",
+    "PnP fitting error is not independent metric ground truth."
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "local_target_building_XY_ground_plane_Z_up_m",
+  "updated_utc": "2026-11-21T20:54:31.658238+00:00",
+  "calibration_sha256": "a8e2a3de5471fb9e1af850deb8fc5a080bd93d4650e48cc1b2f22ac533d840d3",
+  "neighbors": [
+    {
+      "id": "neighbor_4f649f236e",
+      "name": "Neighbor_01",
+      "footprint_xy_m": [
+        [
+          9.62481159835244,
+          -0.043043484341429634
+        ],
+        [
+          22.937277262214604,
+          -0.2709815364964514
+        ],
+        [
+          24.394985604260114,
+          37.08631594697155
+        ],
+        [
+          9.618932016517146,
+          37.38439600773113
+        ],
+        [
+          9.22092147395817,
+          0.32362858286217344
+        ]
+      ],
+      "height_m": 9.0,
+      "ground_z_m": 0.0,
+      "color_rgb": [
+        39,
+        176,
+        143
+      ],
+      "enabled": true,
+      "occluder": true,
+      "annotations": {
+        "source_view": 2,
+        "marked_ground_corners_px": [
+          {
+            "x": 1036.4194326261738,
+            "y": 327.85338457694996
+          },
+          {
+            "x": 1184.928835236846,
+            "y": 334.1461558740123
+          },
+          {
+            "x": 1191.8508836636147,
+            "y": 196.33446446834623
+          },
+          {
+            "x": 1059.0734092955984,
+            "y": 193.8173559495213
+          },
+          {
+            "x": 1032.3162693622273,
+            "y": 326.0715695011001
+          }
+        ],
+        "assumption": "Corners lie on calibrated ground plane Z=0; height estimated manually."
+      }
+    },
+    {
+      "id": "neighbor_3f66d7db4f",
+      "name": "Neighbor_02",
+      "footprint_xy_m": [
+        [
+          -0.3477258908460451,
+          0.14449986066776974
+        ],
+        [
+          -14.681126114432626,
+          1.142695392048927
+        ],
+        [
+          -13.929755839281494,
+          31.91210031059535
+        ],
+        [
+          0.01696537718198636,
+          30.73455777168502
+        ],
+        [
+          -0.02118928958502196,
+          0.3011356216514952
+        ]
+      ],
+      "height_m": 13.0,
+      "ground_z_m": 0.0,
+      "color_rgb": [
+        39,
+        176,
+        143
+      ],
+      "enabled": true,
+      "occluder": true,
+      "annotations": {
+        "source_view": 1,
+        "marked_ground_corners_px": [
+          {
+            "x": 849.4712121212121,
+            "y": 332.2287878787879
+          },
+          {
+            "x": 694.2984848484849,
+            "y": 308.3560606060606
+          },
+          {
+            "x": 770.8901515151515,
+            "y": 105.43787878787879
+          },
+          {
+            "x": 901.1954545454546,
+            "y": 119.36363636363637
+          },
+          {
+            "x": 853.4864158290354,
+            "y": 331.32142413270765
+          }
+        ],
+        "assumption": "Corners lie on calibrated ground plane Z=0; height estimated manually."
+      }
+    }
+  ],
+  "notes": "Context is optional and approximate. Original images and original calibration are never changed; height and footprint are user-supplied."
+}

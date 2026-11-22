@@ -1,0 +1,53 @@
+{
+  "event": "accepted_joint_camera_calibration",
+  "accepted_utc": "2026-11-21T20:54:23.899536+00:00",
+  "original_calibration_sha256": "7d25b6dd2fd7de77fc9a741570d7cc5b48769251d26f6df60bf68dcee905d032",
+  "new_calibration_sha256": "a8e2a3de5471fb9e1af850deb8fc5a080bd93d4650e48cc1b2f22ac533d840d3",
+  "backup_files": [
+    "calibration_backup_20261121T205423_894906Z.json"
+  ],
+  "camera_report": {
+    "method": "joint_geometry_and_poses_fixed_FOV",
+    "description": "Restricted BA: four poses + shared width/depth. H0 height and all FOVs fixed.",
+    "solver_success": true,
+    "solver_message": "`ftol` termination condition is satisfied.",
+    "nfev": 8,
+    "initial_pooled_rmse_px": 6.923936071518273,
+    "refined_pooled_rmse_px": 6.73495287375251,
+    "reference_dimensions_m": {
+      "W": 9.59,
+      "D": 21.67,
+      "H": 9.0
+    },
+    "suggested_dimensions_m": {
+      "W": 9.545555297396877,
+      "D": 23.67019220371166,
+      "H": 9.0
+    },
+    "width_change_pct": -0.46344841087718747,
+    "depth_change_pct": 9.230236288470973,
+    "total_observations": 20,
+    "observed_manual_segments": 0,
+    "manual_line_weight_px_per_degree": 1.5,
+    "initial_manual_mean_angular_error_deg": null,
+    "refined_manual_mean_angular_error_deg": null,
+    "n_views_with_depth_evidence": 2,
+    "fovs_locked": [
+      55.0,
+      55.0,
+      110.0,
+      110.0
+    ],
+    "warnings": [
+      "Joint fitting does not establish absolute metric accuracy or replace survey data.",
+      "RMSE uses fitted points; validate using corners or edges excluded from fitting.",
+      "An incorrect prism footprint can bias all fitted camera poses.",
+      "Only REAL observed structural edges provide angular constraints; VP guides are not independent evidence."
+    ]
+  },
+  "notes": [
+    "Existing photographs and historical runs were not overwritten.",
+    "Saved 2.5D neighbor coordinates must be reviewed after geometry changes.",
+    "PnP fitting error is not independent metric ground truth."
+  ]
+}

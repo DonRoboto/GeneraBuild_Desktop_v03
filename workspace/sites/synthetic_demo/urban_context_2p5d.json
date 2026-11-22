@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "local_target_building_XY_ground_plane_Z_up_m",
+  "updated_utc": "2026-11-21T01:26:14.122909+00:00",
+  "calibration_sha256": "136245964b5ec45fa3898b4527f6dae2da44b72353b0394a02469884f732ae27",
+  "neighbors": [
+    {
+      "id": "neighbor_f633b1a709",
+      "name": "Vecino_izquierdo_DEMO",
+      "footprint_xy_m": [
+        [
+          -12.0,
+          1.0
+        ],
+        [
+          -2.0,
+          1.0
+        ],
+        [
+          -2.0,
+          16.0
+        ],
+        [
+          -12.0,
+          16.0
+        ]
+      ],
+      "height_m": 15.0,
+      "ground_z_m": 0.0,
+      "color_rgb": [
+        39,
+        176,
+        143
+      ],
+      "enabled": true,
+      "occluder": true,
+      "annotations": {
+        "source_view": null,
+        "marked_ground_corners_px": null,
+        "assumption": "Corners lie on calibrated ground plane Z=0; height estimated manually."
+      }
+    },
+    {
+      "id": "neighbor_27b12b13d8",
+      "name": "Vecino_derecho_DEMO",
+      "footprint_xy_m": [
+        [
+          12.0,
+          0.0
+        ],
+        [
+          25.0,
+          0.0
+        ],
+        [
+          25.0,
+          17.0
+        ],
+        [
+          12.0,
+          17.0
+        ]
+      ],
+      "height_m": 12.0,
+      "ground_z_m": 0.0,
+      "color_rgb": [
+        39,
+        176,
+        143
+      ],
+      "enabled": true,
+      "occluder": true,
+      "annotations": {
+        "source_view": null,
+        "marked_ground_corners_px": null,
+        "assumption": "Corners lie on calibrated ground plane Z=0; height estimated manually."
+      }
+    }
+  ],
+  "notes": "Context is optional and approximate. Original images and original calibration are never changed; height and footprint are user-supplied."
+}
